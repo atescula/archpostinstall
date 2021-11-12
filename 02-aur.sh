@@ -51,6 +51,7 @@ PKGS=(
 'ttf-selawik'
 'ttf-tahoma'
 'update-grub'
+'ventoy-bin'
 'virtualbox-ext-oracle'
 'wondershaper'
 'xnviewmp'
