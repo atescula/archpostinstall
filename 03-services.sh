@@ -8,6 +8,9 @@ clear
 echo -e "\nEnabling essential services"
 echo -e "\nEnabling essential services"
 
+sudo systemctl disable systemd-networkd.service
+
+
 sudo systemctl enable sddm.service
 sudo systemctl enable cups.service
 #ntpd -qg
