@@ -27,6 +27,7 @@ sudo systemctl enable cronie.service
 sudo systemctl start cronie.service
 
 sudo modprobe vboxdrv
+sudo groupadd -f vboxsf
 sudo usermod -aG vboxsf $USER
 
 
