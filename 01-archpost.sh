@@ -7,12 +7,12 @@ sudo pacman -S --needed go
 
 ###### yay
 
-#rm -vrf ~/yay
-#cd ~/
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si
-#rm -rf ~/yay
+rm -vrf ~/yay
+cd ~/
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+rm -rf ~/yay
 
 ######
 
@@ -52,9 +52,9 @@ PKGS=(
 'fuse3'
 'fuseiso'
 'gamemode'
-'gimp' # Photo editing
+'gimp'
 'git'
-'gparted' # partition management
+'gparted'
 'grub-customizer'
 'gst-libav'
 'gst-libav'
@@ -70,7 +70,7 @@ PKGS=(
 'hunspell'
 'hyphen'
 'intel-media-sdk'
-'jdk-openjdk' # Java 17
+'jdk-openjdk'
 'kaccounts-providers'
 'kate'
 'kcodecs'
