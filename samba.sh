@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo pacman -S --needed --noconfirm samba smbclient cifs-utils
 sudo pacman -S --needed --noconfirm avahi nss-mdns
+sudo groupadd -f sambashare
 sudo smbpasswd -a $USER
 sudo gpasswd sambashare -a $USER
 sudo systemctl enable smb
