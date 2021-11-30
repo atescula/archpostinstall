@@ -1,4 +1,8 @@
 #!/bin/bash
+
+sudo sh -c 'echo "\nDefaults timestamp_timeout=-1">>/etc/sudoers'
+
+
 #========================= AUR ===============================
 
 PKGS=(
@@ -63,3 +67,5 @@ PKGS=(
 for PKG in "${PKGS[@]}"; do
     yay -S --noconfirm --needed $PKG
 done
+
+sudo sed -i "/Defaults timestamp_timeout=-1/d" /etc/sudoers
