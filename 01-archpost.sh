@@ -1,21 +1,6 @@
 #!/bin/bash
 sudo pacman -Syyu
 
-sudo pacman -S --needed intel-ucode
-sudo pacman -S --needed git base-devel curl wget rsync
-sudo pacman -S --needed go
-
-###### yay
-
-rm -vrf ~/yay
-cd ~/
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-rm -rf ~/yay
-
-######
-
 #=========================== REMOVE some stuff
 sudo pacman -R --noconfirm aisleriot
 sudo pacman -R --noconfirm lftp
