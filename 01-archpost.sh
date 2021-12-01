@@ -1,4 +1,5 @@
 #!/bin/bash
+export VISUAL=nano
 sudo pacman -Syyu
 
 #=========================== REMOVE some stuff
