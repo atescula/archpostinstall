@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo sh -c 'echo "\nDefaults timestamp_timeout=-1">>/etc/sudoers'
-
+#========================== disable sudo timeout
+sudo sh -c 'echo -e "\nDefaults timestamp_timeout=-1">>/etc/sudoers'
 
 #========================= AUR ===============================
 
@@ -68,4 +68,6 @@ for PKG in "${PKGS[@]}"; do
     yay -S --noconfirm --needed $PKG
 done
 
+
+#========================== disable sudo timeout
 sudo sed -i "/Defaults timestamp_timeout=-1/d" /etc/sudoers
