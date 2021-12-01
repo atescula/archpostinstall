@@ -1,5 +1,6 @@
 #!/bin/bash
 export VISUAL=nano
+export EDITOR=nano
 
 #Enable multilib
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
@@ -14,6 +15,10 @@ sudo pacman -R --noconfirm grsync
 sudo pacman -R --noconfirm quodlibet
 sudo pacman -R --noconfirm exfalso
 sudo pacman -R --noconfirm exfatprogs
+
+
+#========================== disable sudo timeout
+sudo sh -c 'echo -e "\nDefaults timestamp_timeout=-1">>/etc/sudoers'
 
 
 #========================== REPO's
@@ -147,7 +152,9 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
+#========================== disable sudo timeout
 
+sudo sed -i "/Defaults timestamp_timeout=-1/d" /etc/sudoers
 
 
 
