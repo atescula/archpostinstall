@@ -2,7 +2,7 @@
 sudo pacman -Syyu
 sudo pacman -S --needed intel-ucode
 sudo pacman -S --needed git base-devel curl wget rsync
-sudo pacman -S --needed go
+#sudo pacman -S --needed go
 
 ###### yay
 
