@@ -1,6 +1,11 @@
 #!/bin/bash
 export VISUAL=nano
-sudo pacman -Syyu
+
+#Enable multilib
+sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+
+sudo pacman -Syu --noconfirm
+
 
 #=========================== REMOVE some stuff
 sudo pacman -R --noconfirm aisleriot
