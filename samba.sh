@@ -4,6 +4,7 @@ sudo pacman -S --needed --noconfirm avahi nss-mdns
 sudo groupadd -f sambashare
 sudo smbpasswd -a $USER
 sudo gpasswd sambashare -a $USER
+sudo cp smb.conf /etc/samba/
 sudo systemctl enable smb
 sudo systemctl enable nmb
 sudo systemctl start smb
