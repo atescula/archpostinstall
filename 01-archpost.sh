@@ -15,7 +15,13 @@ sudo pacman -R --noconfirm grsync
 sudo pacman -R --noconfirm quodlibet
 sudo pacman -R --noconfirm exfalso
 sudo pacman -R --noconfirm exfatprogs
+sudo pacman -R --noconfirm pulseaudio
+sudo pacman -R --noconfirm pulseaudio-alsa
+sudo pacman -R --noconfirm pulseaudio-jack
 
+#============================ install pipewire
+
+sudo pacman -S --needed pipewire-pulse pipewire-alsa pipewire-jack pipewire-media-session easyeffects
 
 #========================== disable sudo timeout
 sudo sh -c 'echo -e "\nDefaults timestamp_timeout=-1">>/etc/sudoers'
