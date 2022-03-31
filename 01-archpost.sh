@@ -39,7 +39,7 @@ PKGS=(
 'adobe-source-code-pro-fonts'
 'adobe-source-sans-fonts'
 'adobe-source-serif-fonts'
-'amdvlk'
+#'amdvlk'
 'android-file-transfer'
 'audiocd-kio'
 'bash-completion'
