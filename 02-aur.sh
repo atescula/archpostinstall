@@ -26,7 +26,7 @@ PKGS=(
 'inotify-tools'
 'insync'
 'inxi'
-'libreoffice-extension-languagetool'
+#'libreoffice-extension-languagetool'
 'libreoffice-extension-orthos-greek-english-dictionary'
 'libreoffice-extension-orthos-greek-thesaurus'
 'mangohud'
